@@ -8,9 +8,9 @@ import 'package:pythagorean_tree/features/pythagorean_tree/controller/state.dart
 class PythagoreanTreeController extends GetxController {
   final state = PythagoreanTreeState();
 
-  final rng = Random();
-
   void generateNewTree(double screenWidth) async {
+    final rng = Random.secure();
+
     final maxLength = screenWidth / 11;
 
     final int leavesRandomColor = rng.nextInt(3) + 1;
@@ -41,8 +41,8 @@ class PythagoreanTreeController extends GetxController {
   }
 
   @override
-  void onInit() {
+  void onReady() {
+    super.onReady();
     generateNewTree(Get.width);
-    super.onInit();
   }
 }
