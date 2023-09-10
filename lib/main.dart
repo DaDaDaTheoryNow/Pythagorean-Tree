@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pythagorean_tree/features/pythagorean_tree/view/screen/pythagorean_screen.dart';
+import 'package:get/get.dart';
+import 'package:pythagorean_tree/common/pages.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,10 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      //theme: AppTheme.lightAppTheme,
+    return GetMaterialApp(
+      theme: ThemeData.dark(useMaterial3: true),
       debugShowCheckedModeBanner: false,
-      home: PythagoreanScreen(),
+      initialRoute: AppPages.pythagoreanTree,
+      getPages: AppPages.pages,
     );
   }
 }

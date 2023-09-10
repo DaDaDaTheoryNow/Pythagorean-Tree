@@ -26,13 +26,14 @@ class PythagoreanTree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 15,
+      alignment: Alignment.center,
+      height: MediaQuery.of(context).size.height / 2.2,
+      width: MediaQuery.of(context).size.width / 1.1,
       decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(42),
-      ),
+          color: Colors.white, borderRadius: BorderRadius.circular(42)),
       child: CustomPaint(
-        size: Size(200, 200),
+        size: Size(MediaQuery.of(context).size.width / 1.6,
+            MediaQuery.of(context).size.height / 4.3),
         painter: PythagoreanTreePainter(
             leftAngle: leftAngle,
             rightAngle: rightAngle,
