@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.pythagorean_tree"
+    namespace "com.dadadaDEV.pythagorean_tree"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
