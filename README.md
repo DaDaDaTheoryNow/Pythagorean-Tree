@@ -1,16 +1,29 @@
-# pythagorean_tree
+<h1 align="center">Welcome to Pythagorean Tree Generator App with Get Layers Architecture 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-A new Flutter project.
+> In this project, I created a fractal generator - Trees of Pythagoras
+> Only Russian Language :(
+> # Technologies
+> - Flutter
+> - Get
+> - Layers Architecture
 
-## Getting Started
+## Screenshots
+![pythagorean-tree](https://github.com/DaDaDaTheoryNow/Pythagorean-Tree/assets/105795587/31097930-6840-4d09-b08b-19f904391b87)
 
-This project is a starting point for a Flutter application.
+## Install
 
-A few resources to get you started if this is your first Flutter project:
+```sh
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+flutter run
+```
