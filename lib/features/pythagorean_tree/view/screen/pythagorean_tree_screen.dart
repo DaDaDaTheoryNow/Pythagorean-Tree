@@ -18,7 +18,7 @@ class PythagoreanTreeScreen extends GetView<PythagoreanTreeController> {
         backgroundColor: Colors.black,
         centerTitle: true,
         title: Text(
-          "Дерево Пифогора",
+          "Дерево Пифaгора",
           style: TextStyle(
             fontWeight: FontWeight.w600,
           ),

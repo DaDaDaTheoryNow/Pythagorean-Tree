@@ -9,7 +9,11 @@ class PythagoreanTreeController extends GetxController {
   final state = PythagoreanTreeState();
 
   void generateNewTree(double screenWidth) async {
-    final rng = Random.secure();
+    final rng = Random();
+
+    if (screenWidth <= 11) {
+      screenWidth = rng.nextInt(45) + 130;
+    }
 
     final maxLength = screenWidth / 11;
 
@@ -41,8 +45,9 @@ class PythagoreanTreeController extends GetxController {
   }
 
   @override
-  void onReady() {
-    super.onReady();
-    generateNewTree(Get.width);
+  void onInit() {
+    var screenWidth = Get.width;
+    generateNewTree(screenWidth);
+    super.onInit();
   }
 }
