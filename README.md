@@ -7,7 +7,7 @@
 </p>
 
 > In this project, I created a fractal generator - Trees of Pythagoras
-> Only Russian Language :(
+> - Only Russian Language :(
 > # Technologies
 > - Flutter
 > - Get
