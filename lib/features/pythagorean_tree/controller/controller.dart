@@ -8,15 +8,19 @@ import 'package:pythagorean_tree/features/pythagorean_tree/controller/state.dart
 class PythagoreanTreeController extends GetxController {
   final state = PythagoreanTreeState();
 
+  // Функция для генерации рандомных значений дерева
   void generateNewTree(double screenWidth) async {
     final rng = Random();
 
+    // Если ширина экрана меньше положений 
     if (screenWidth <= 11) {
       screenWidth = rng.nextInt(45) + 130;
     }
 
+    // Конечная длина дерева
     final maxLength = screenWidth / 11;
 
+    // Рандомный цвет для листьев
     final int leavesRandomColor = rng.nextInt(3) + 1;
     final Color? leavesColor;
     switch (leavesRandomColor) {
@@ -33,6 +37,7 @@ class PythagoreanTreeController extends GetxController {
         leavesColor = Colors.pink;
     }
 
+    // Генерация случайных значений для дерева
     state.pythagoreanTreeModel = PythagoreanTreeModel(
       leftAngle: rng.nextInt(35) + 15,
       rightAngle: rng.nextInt(35) + 15,
@@ -47,6 +52,7 @@ class PythagoreanTreeController extends GetxController {
   @override
   void onInit() {
     var screenWidth = Get.width;
+    // Генерировать дерево с шириной экрана
     generateNewTree(screenWidth);
     super.onInit();
   }
